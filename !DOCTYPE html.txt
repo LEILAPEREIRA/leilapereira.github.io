@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leila Pereira | Consultoria Contábil e Power BI</title>
+  <style>
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #fffafc; color: #333; }
+    header { background: linear-gradient(135deg, #b388eb, #ffb6c1); color: white; padding: 60px 20px; text-align: center; }
+    header h1 { font-size: 36px; margin: 0; }
+    header p { font-size: 18px; max-width: 700px; margin: 10px auto 0; }
+    nav { background: #fff; padding: 15px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+    nav a { margin: 0 15px; text-decoration: none; color: #a052d3; font-weight: bold; }
+    section { max-width: 1000px; margin: 60px auto; padding: 0 20px; }
+    h2 { color: #a052d3; margin-bottom: 20px; }
+    .skills li, .books li { margin-bottom: 10px; }
+    .links a { display: inline-block; margin: 10px 15px; color: #b030b0; text-decoration: none; font-weight: bold; }
+    .contact input, .contact textarea { width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc; }
+    .contact button { background: #b030b0; color: white; border: none; padding: 10px 25px; border-radius: 5px; cursor: pointer; }
+    footer { text-align: center; padding: 30px; font-size: 14px; color: #888; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Leila Pereira</h1>
+    <p>Contadora especializada em IA, Power BI e Planejamento Tributário — Transformando dados em decisões que economizam e impulsionam negócios.</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#competencias">Competências</a>
+    <a href="#livros">Livros</a>
+    <a href="#canais">Canais</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Sou contadora registrada no CRC-SP, com mais de 10 anos de experiência em consultoria estratégica, análise de dados e soluções tributárias. Atuo com foco em inovação e performance financeira, integrando Inteligência Artificial e Power BI aos processos contábeis. Também sou autora de livros na área e educadora digital.</p>
+  </section>
+
+  <section id="competencias">
+    <h2>Minhas Competências</h2>
+    <ul class="skills">
+      <li>🔍 Inteligência Artificial aplicada à contabilidade</li>
+      <li>📊 Dashboards estratégicos com Power BI</li>
+      <li>💡 Planejamento tributário e fiscal</li>
+      <li>🧩 Consultoria personalizada para empresas</li>
+      <li>🎓 Mentorias e cursos online</li>
+    </ul>
+  </section>
+
+  <section id="livros">
+    <h2>Livros Publicados</h2>
+    <ul class="books">
+      <li><a href="https://www.amazon.com.br/dp/B0CYVRNR9G" target="_blank">📘 Explorando o Poder do Power BI</a></li>
+      <li><a href="https://www.amazon.com.br/dp/B0DS6CQQTG" target="_blank">📗 Hidrogênio Verde e Empreendedorismo</a></li>
+      <li><a href="https://www.amazon.com.br/dp/B0CWPSL8FV" target="_blank">📙 Aplicações de Business Intelligence</a></li>
+    </ul>
+  </section>
+
+  <section id="canais">
+    <h2>Redes e Credenciais</h2>
+    <div class="links">
+      <a href="https://www.instagram.com/contactivec" target="_blank">📸 Instagram</a>
+      <a href="https://www.youtube.com/channel/UCv9hwgi9vV5-O9EN09DziRQ" target="_blank">▶️ YouTube</a>
+      <a href="https://wwws.cnpq.br/cvlattesweb/PKG_MENU.menu?f_cod=2BEE74BB1FCD8F8DA83298EFC5CA211B" target="_blank">📄 Currículo Lattes</a>
+      <a href="/mnt/data/CRCSP - LEILA PEREIRA.pdf" target="_blank">📝 Registro CRC-SP</a>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <form class="contact">
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea rows="5" placeholder="Sua mensagem"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2024 Leila Pereira | Todos os direitos reservados
+  </footer>
+</body>
+</html>
