@@ -14,27 +14,34 @@
       background: #0d1117;
       color: #e1e1e1;
     }
+    .light-section {
+      background: #ffffff;
+      color: #111;
+      padding: 60px 20px;
+    }
+    .dark-section {
+      background: #0d1117;
+      color: #e1e1e1;
+      padding: 60px 20px;
+    }
     header {
       background: linear-gradient(135deg, #9b2fff, #ff4bdb);
       color: white;
-      padding: 60px 20px;
+      padding: 80px 20px 40px;
       text-align: center;
       box-shadow: 0 0 15px rgba(255, 75, 219, 0.4);
     }
     header h1 {
-      font-size: 36px;
-      margin: 0;
+      font-size: 40px;
+      margin-bottom: 10px;
       color: #fff;
-      text-shadow: 0 0 5px #ff4bdb;
+      text-shadow: 0 0 6px #ff4bdb;
     }
     header h2 {
-      color: #ffb6ff;
-    }
-    header p {
-      font-size: 18px;
+      font-size: 24px;
+      color: #ffd6f5;
       max-width: 700px;
-      margin: 10px auto 0;
-      color: #f0e7ff;
+      margin: 0 auto;
     }
     nav {
       background: #111;
@@ -53,7 +60,7 @@
     }
     section {
       max-width: 1000px;
-      margin: 60px auto;
+      margin: 0 auto;
       padding: 0 20px;
       animation: fadeIn 1s ease;
     }
@@ -137,17 +144,17 @@
 <body>
   <a href="https://wa.me/5511950038487" target="_blank" id="whatsapp">💬 Fale comigo agora</a>
 
-  <section>
-    <h2 style="margin-top: 10px; font-weight: normal;">Leila Pereira</h2>
-    <p>Sou especialista em Power BI, Planejamento Tributário e Inteligência Artificial aplicada à contabilidade.</p>
-  </section>
+  <header>
+    <h1>Power BI e Contabilidade Estratégica</h1>
+    <h2>Transformando dados contábeis em decisões inteligentes com o poder do Power BI.</h2>
+  </header>
 
-  <section id="sobre">
+  <section class="light-section" id="sobre">
     <h2>Sobre Mim</h2>
-    <p>Atuo há mais de 10 anos na área contábil, com expertise em consultoria estratégica, dados e ferramentas modernas como Power BI e IA. Minha missão é transformar informações financeiras em decisões inteligentes.</p>
+    <p><strong>Leila Pereira</strong> é contadora com mais de 10 anos de experiência, especialista em Power BI e Inteligência Artificial aplicada à contabilidade. Atua com consultoria estratégica, análise de dados e desenvolvimento de soluções visuais para tomada de decisões mais assertivas.</p>
   </section>
 
-  <section id="cursos">
+  <section class="dark-section" id="cursos">
     <h2>Curso Power BI para Contadores</h2>
     <p>Domine o Power BI com foco na contabilidade e ofereça insights poderosos para os seus clientes.</p>
     <ul>
@@ -159,7 +166,7 @@
     <p><a href="https://leilapereira.github.io/curso" style="color:#ffb6ff">➡️ Saiba mais sobre o curso</a></p>
   </section>
 
-  <section class="books-section">
+  <section class="light-section books-section">
     <h2>📚 Meus Livros na Amazon</h2>
     <ul>
       <li><a href="https://www.amazon.com.br/Explorando-Poder-Power-Transforme-Informa%C3%A7%C3%B5es-ebook/dp/B0CYVRNR9G" target="_blank">Explorando o Poder do Power BI</a></li>
@@ -168,18 +175,18 @@
     </ul>
   </section>
 
-  <section id="canal">
+  <section class="dark-section" id="canal">
     <h2>📺 Canal no YouTube</h2>
     <p>Inscreva-se no canal <strong>Contabilidade com Power BI</strong> para acompanhar vídeos e dicas práticas:</p>
     <p><a href="https://www.youtube.com/channel/UCv9hwgi9vV5-O9EN09DziRQ" target="_blank" style="color:#ffb6ff">🎥 Acessar Canal do YouTube</a></p>
   </section>
 
-  <div class="qr-code">
+  <div class="light-section qr-code">
     <h3>📲 Acesse pelo celular</h3>
     <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://leilapereira.github.io" alt="QR Code">
   </div>
 
-  <footer>
+  <footer class="dark-section">
     <h3>Leila Pereira</h3>
     <p>Especialista em Power BI & Inteligência Contábil</p>
     <div class="social-icons">
@@ -191,4 +198,3 @@
   </footer>
 </body>
 </html>
-
