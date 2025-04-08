@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Leila Pereira | Consultoria Contábil e Power BI</title>
   <link rel="icon" type="image/png" href="https://img.icons8.com/color/48/000000/combo-chart--v1.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Microsoft+Sans+Serif&display=swap" rel="stylesheet">
   <style>
     * { scroll-behavior: smooth; }
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Segoe UI', 'Microsoft Sans Serif', sans-serif;
       background: #0d1117;
       color: #e1e1e1;
     }
@@ -93,10 +94,19 @@
       font-size: 14px;
       color: #aaa;
     }
-    .banner {
-      width: 100%;
-      max-height: 300px;
-      object-fit: cover;
+    footer img {
+      width: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+    .social-icons img {
+      width: 32px;
+      height: 32px;
+      filter: drop-shadow(0 0 4px #ff4bdb);
     }
     #whatsapp {
       position: fixed;
@@ -108,7 +118,36 @@
       border-radius: 50px;
       text-decoration: none;
       font-weight: bold;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    .service-icon img {
+      filter: brightness(1.8);
+      width: 48px;
+      height: 48px;
+      margin-bottom: 10px;
+    }
+    .sobre-container {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-top: 60px;
+    }
+    .sobre-container img {
+      max-width: 200px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255,75,219,0.4);
+    }
+    .powerbi-preview {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255,75,219,0.2);
+      margin-top: 40px;
+    }
+    .qr-code {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .qr-code img {
+      width: 160px;
     }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
@@ -117,169 +156,49 @@
   </style>
 </head>
 <body>
-  
-    <a href="https://wa.me/5511950038487" target="_blank" style="display: inline-block; margin-top: 20px; padding: 10px 20px; background: #25D366; color: white; text-decoration: none; border-radius: 8px; font-weight: bold;">💬 Fale comigo agora</a>
+  <a href="https://wa.me/5511950038487" target="_blank" id="whatsapp">💬 Fale comigo agora</a>
+
+  <section>
     <h2 style="margin-top: 10px; font-weight: normal;">Leila Pereira</h2>
-    <p>Sou especialista em Power BI, Planejamento Tributário e Inteligência Artificial aplicada à contabilidade. A união entre o conhecimento contábil e o poder da análise de dados permite uma visão estratégica do negócio como nunca antes. Com Power BI, o contador deixa de ser apenas um registrador de informações e se torna um agente de transformação, oferecendo insights visuais em tempo real que otimizam decisões, antecipam riscos e revelam oportunidades que impactam diretamente o crescimento da empresa.</p>
-  </header>
-
-  <img src="https://img.freepik.com/vetores-premium/banner-analise-de-dados-power-bi_418302-1062.jpg" alt="Banner Power BI" class="banner" />
-
-  <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#competencias">Competências</a>
-    <a href="#servicos">Serviços</a>
-    <a href="#livros">Livros</a>
-    <a href="#canais">Canais</a>
-    <a href="#blog">Blog</a>
-    <a href="#curso">Curso</a>
-    <a href="#contato">Contato</a>
-  </nav>
+    <p>Sou especialista em Power BI, Planejamento Tributário e Inteligência Artificial aplicada à contabilidade...</p>
+    <img src="https://www.microsoft.com/pt-br/power-platform/products/power-bi/static/media/pbi-dashboard.ef2e8d8c.png" alt="Painel Power BI" class="powerbi-preview" />
+  </section>
 
   <section id="sobre">
-    <div style="text-align: center; margin-bottom: 20px;">
-      <img src="https://cdn.jsdelivr.net/gh/leilapereira/assets/leila-foto.jpg" alt="Leila Pereira" style="border-radius: 50%; width: 160px; height: 160px; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-    </div>
     <h2>Sobre Mim</h2>
-    <p>Sou contadora registrada no CRC-SP, com mais de 10 anos de experiência em consultoria estratégica, análise de dados e soluções tributárias. Atuo com foco em inovação e performance financeira, integrando Inteligência Artificial e Power BI aos processos contábeis. Também sou autora de livros na área e educadora digital.</p>
+    <div class="sobre-container">
+      <img src="https://cdn.jsdelivr.net/gh/leilapereira/assets/leila-foto.jpg" alt="Leila Pereira" />
+      <p>Atuo há mais de 10 anos na área contábil, com expertise em consultoria estratégica, dados e ferramentas modernas como Power BI e IA. Minha missão é transformar informações financeiras em decisões inteligentes.</p>
+    </div>
   </section>
 
-  <section id="competencias">
-    <h2>Minhas Competências</h2>
-    <ul class="skills">
-      <li>🔍 Inteligência Artificial aplicada à contabilidade</li>
-      <li>📊 Dashboards estratégicos com Power BI</li>
-      <li>💡 Planejamento tributário e fiscal</li>
-      <li>🧩 Consultoria personalizada para empresas</li>
-      <li>🎓 Mentorias e cursos online</li>
+  <section id="cursos">
+    <h2>Curso Power BI para Contadores</h2>
+    <p>Domine o Power BI com foco na contabilidade e ofereça insights poderosos para os seus clientes.</p>
+    <ul>
+      <li>✔️ Introdução ao Power BI</li>
+      <li>✔️ ETL com Power Query</li>
+      <li>✔️ Visualizações e Dashboards</li>
+      <li>✔️ Casos práticos da área contábil</li>
     </ul>
+    <p><a href="https://leilapereira.github.io/curso" style="color:#ffb6ff">➡️ Saiba mais sobre o curso</a></p>
   </section>
 
-  <section id="servicos">
-    <h2>Serviços Oferecidos</h2>
-    <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 40px; text-align: center;">
-      <div style="flex: 1 1 200px; max-width: 220px;">
-        <img src="https://img.icons8.com/ios-filled/100/000000/conference-call.png" width="60" alt="Consultoria">
-        <h3>Consultoria</h3>
-        <p>Mapeamento de requisitos e entendimento do modelo de negócios para identificar soluções personalizadas.</p>
-      </div>
-      <div style="flex: 1 1 200px; max-width: 220px;">
-        <img src="https://img.icons8.com/ios-filled/100/000000/database.png" width="60" alt="ETL">
-        <h3>ETL - Extract, Transform, Load</h3>
-        <p>Coleta, tratamento e centralização de dados para construção de modelos eficientes.</p>
-      </div>
-      <div style="flex: 1 1 200px; max-width: 220px;">
-        <img src="https://img.icons8.com/ios-filled/100/000000/combo-chart.png" width="60" alt="Relatórios">
-        <h3>Elaboração de Relatórios</h3>
-        <p>Criação de relatórios interativos, visuais e personalizados com foco em performance.</p>
-      </div>
-      <div style="flex: 1 1 200px; max-width: 220px;">
-        <img src="https://img.icons8.com/ios-filled/100/000000/cloud-upload.png" width="60" alt="Compartilhamento">
-        <h3>Compartilhamento</h3>
-        <p>Distribuição dos relatórios com segurança para os responsáveis pela tomada de decisão.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="livros">
-    <h2>Livros Publicados</h2>
-    <ul class="books">
-      <li><a href="https://www.amazon.com.br/dp/B0CYVRNR9G" target="_blank">📘 Explorando o Poder do Power BI</a></li>
-      <li><a href="https://www.amazon.com.br/dp/B0DS6CQQTG" target="_blank">📗 Hidrogênio Verde e Empreendedorismo</a></li>
-      <li><a href="https://www.amazon.com.br/dp/B0CWPSL8FV" target="_blank">📙 Aplicações de Business Intelligence</a></li>
-    </ul>
-  </section>
-
-  
-    <div style="text-align: center; margin-top: 30px;">
-      
-    <div style="text-align: center; margin-top: 15px;">
-  <a href="https://www.linkedin.com/in/contabilleila/" target="_blank" style="text-decoration: none; color: #b030b0; font-weight: bold;">💼 LinkedIn</a>
-</div>
-
-      <iframe width="360" height="215" src="https://www.youtube.com/embed?listType=user_uploads&list=UCv9hwgi9vV5-O9EN09DziRQ" title="Vídeos de Leila Pereira" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </section>
-  <section id="curso">
-    <h2>Curso Power BI Básico</h2>
-    <p style="font-size: 16px; color: #ccc; max-width: 800px; margin-bottom: 30px;">Aprenda Power BI do zero, com aulas práticas e aplicadas ao dia a dia profissional. O curso é voltado para iniciantes e profissionais que querem dominar as ferramentas de visualização de dados para uso contábil, financeiro e estratégico.</p>
-    <ul style="list-style: none; padding-left: 0; font-size: 16px; line-height: 1.8;">
-      <li>✅ Aprendizado do zero, sem necessidade de conhecimento prévio</li>
-      <li>✅ Acesso imediato e vitalício</li>
-      <li>✅ Suporte direto com Leila</li>
-      <li>✅ Aplicações práticas para empresas</li>
-    </ul>
-    <br>
-    <a href="#" target="_blank" style="display: inline-block; background: #ff4bdb; color: white; padding: 12px 25px; border-radius: 8px; font-weight: bold; text-decoration: none;">🔗 Inscreva-se agora</a>
-  </section>
-
-
-  <section id="blog">
-  <h2>Blog & Conteúdos</h2>
-  <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
-    <div style="background: #1b1f24; border-radius: 8px; padding: 20px; max-width: 300px; box-shadow: 0 0 10px rgba(255,75,219,0.15);">
-      <h3 style="color: #ff79c6;">Como o Power BI Revoluciona a Contabilidade</h3>
-      <p style="font-size: 14px; color: #ccc;">Entenda como a visualização de dados pode transformar a tomada de decisão contábil e gerencial.</p>
-      <a href="#" style="color: #ff4bdb; text-decoration: none; font-weight: bold;">➜ Leia mais</a>
-    </div>
-    <div style="background: #1b1f24; border-radius: 8px; padding: 20px; max-width: 300px; box-shadow: 0 0 10px rgba(255,75,219,0.15);">
-      <h3 style="color: #ff79c6;">Dicas para Começar com Dashboards Financeiros</h3>
-      <p style="font-size: 14px; color: #ccc;">Veja os primeiros passos para estruturar relatórios que tragam insights relevantes com Power BI.</p>
-      <a href="#" style="color: #ff4bdb; text-decoration: none; font-weight: bold;">➜ Leia mais</a>
-    </div>
-    <div style="background: #1b1f24; border-radius: 8px; padding: 20px; max-width: 300px; box-shadow: 0 0 10px rgba(255,75,219,0.15);">
-      <h3 style="color: #ff79c6;">Inteligência Artificial aplicada ao planejamento tributário</h3>
-      <p style="font-size: 14px; color: #ccc;">Saiba como IA pode auxiliar contadores a identificar oportunidades e economizar impostos.</p>
-      <a href="#" style="color: #ff4bdb; text-decoration: none; font-weight: bold;">➜ Leia mais</a>
-    </div>
+  <div class="qr-code">
+    <h3>📲 Acesse pelo celular</h3>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://leilapereira.github.io" alt="QR Code">
   </div>
-</section>
-
-  <section id="contato">
-    <h2 style="text-align: center; font-size: 36px; margin-bottom: 30px;">Contatos</h2>
-    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 60px; font-size: 18px;">
-      <div style="min-width: 200px;">
-        <strong>WhatsApp:</strong><br>
-        <a href="https://wa.me/5511950038487" target="_blank" style="color: #5a5a5a; text-decoration: none;">(11) 95003-8487</a>
-      </div>
-      <div style="min-width: 200px;">
-        <strong>LinkedIn:</strong><br>
-        <a href="https://www.linkedin.com/in/contabilleila/" target="_blank" style="color: #5a5a5a; text-decoration: none;">linkedin.com/in/contabilleila</a>
-      </div>
-      <div style="min-width: 200px;">
-        <strong>E-mail:</strong><br>
-        <a href="mailto:contabilassessoria.leilap@gmail.com" style="color: #5a5a5a; text-decoration: none;">contabilassessoria.leilap@gmail.com</a>
-      </div>
-    </div>
-    <br><br>
-    <form class="contact">
-      <input type="text" placeholder="Seu nome" required>
-      <input type="email" placeholder="Seu e-mail" required>
-      <textarea rows="5" placeholder="Sua mensagem"></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-
-  <a id="whatsapp" href="https://wa.me/5511950038487" target="_blank">💬 WhatsApp</a>
 
   <footer>
-    &copy; 2024 Leila Pereira | Todos os direitos reservados
-    <div style="max-width: 300px; margin: 40px auto; text-align: center; background: #f5f5f5; padding: 20px; border-radius: 12px;">
-    <img src="https://cdn.jsdelivr.net/gh/leilapereira/assets/leila-foto.jpg" alt="Leila Pereira" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-bottom: 10px;">
-    <h3 style="margin: 0;">Leila Pereira</h3>
-    <p style="font-size: 14px; color: #555; margin: 5px 0 15px;">Especialista em Power BI & Inteligência Contábil</p>
-    <div style="font-size: 18px;">
-      <a href="https://www.instagram.com/contabilcompowerbi/" target="_blank" style="margin: 0 10px; text-decoration: none;">📸</a>
-      <a href="https://www.linkedin.com/in/contabilleila/" target="_blank" style="margin: 0 10px; text-decoration: none;">💼</a>
-      <a href="https://wa.me/5511950038487" target="_blank" style="margin: 0 10px; text-decoration: none;">💬</a>
-      <a href="mailto:contabilassessoria.leilap@gmail.com" style="margin: 0 10px; text-decoration: none;">📧</a>
+    <img src="https://cdn.jsdelivr.net/gh/leilapereira/assets/leila-foto.jpg" alt="Leila Pereira" />
+    <h3>Leila Pereira</h3>
+    <p>Especialista em Power BI & Inteligência Contábil</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/contabilcompowerbi" target="_blank"><img src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="Instagram" /></a>
+      <a href="https://www.linkedin.com/in/contabilleila/" target="_blank"><img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" /></a>
+      <a href="mailto:contabilassessoria.leilap@gmail.com"><img src="https://img.icons8.com/color/48/gmail-new.png" alt="E-mail" /></a>
     </div>
-  </div>
-
-<div style="margin-top: 30px; text-align: center;">
-    <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://wa.me/5511950038487" alt="QR WhatsApp Leila" style="border-radius: 10px;">
-    <p style="font-size: 14px; color: #888; margin-top: 5px;">Escaneie para falar direto comigo no WhatsApp</p>
-  </div>
-
+    <p>© 2024 Leila Pereira | Todos os direitos reservados</p>
+  </footer>
 </body>
 </html>
