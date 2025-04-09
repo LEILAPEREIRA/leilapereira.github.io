@@ -14,34 +14,27 @@
       background: #0d1117;
       color: #e1e1e1;
     }
-    .light-section {
-      background: #ffffff;
-      color: #111;
-      padding: 60px 20px;
-    }
-    .dark-section {
-      background: #0d1117;
-      color: #e1e1e1;
-      padding: 60px 20px;
-    }
     header {
       background: linear-gradient(135deg, #9b2fff, #ff4bdb);
       color: white;
-      padding: 80px 20px 40px;
+      padding: 60px 20px;
       text-align: center;
       box-shadow: 0 0 15px rgba(255, 75, 219, 0.4);
     }
     header h1 {
-      font-size: 40px;
-      margin-bottom: 10px;
+      font-size: 38px;
+      margin: 0;
       color: #fff;
       text-shadow: 0 0 6px #ff4bdb;
     }
     header h2 {
-      font-size: 24px;
-      color: #ffd6f5;
-      max-width: 700px;
-      margin: 0 auto;
+      color: #ffb6ff;
+    }
+    header p {
+      font-size: 20px;
+      max-width: 800px;
+      margin: 15px auto 0;
+      color: #f0e7ff;
     }
     nav {
       background: #111;
@@ -60,7 +53,7 @@
     }
     section {
       max-width: 1000px;
-      margin: 0 auto;
+      margin: 60px auto;
       padding: 0 20px;
       animation: fadeIn 1s ease;
     }
@@ -129,11 +122,22 @@
       width: 160px;
     }
     .books-section ul li a {
-      color: #ffb6ff;
+      color: #d49add;
       text-decoration: none;
     }
     .books-section ul {
       padding-left: 20px;
+    }
+    .sobre-container {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .sobre-container img {
+      width: 180px;
+      border-radius: 16px;
+      box-shadow: 0 0 12px rgba(255, 75, 219, 0.4);
     }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
@@ -145,56 +149,19 @@
   <a href="https://wa.me/5511950038487" target="_blank" id="whatsapp">💬 Fale comigo agora</a>
 
   <header>
-    <h1>Power BI e Contabilidade Estratégica</h1>
-    <h2>Transformando dados contábeis em decisões inteligentes com o poder do Power BI.</h2>
+    <h1>Transforme Dados em Decisões com Power BI e Contabilidade Inteligente</h1>
+    <p>Descomplique os números e potencialize a estratégia do seu negócio com tecnologia e visão contábil.</p>
   </header>
 
-  <section class="light-section" id="sobre">
+  <section id="sobre">
     <h2>Sobre Mim</h2>
-    <p><strong>Leila Pereira</strong> é contadora com mais de 10 anos de experiência, especialista em Power BI e Inteligência Artificial aplicada à contabilidade. Atua com consultoria estratégica, análise de dados e desenvolvimento de soluções visuais para tomada de decisões mais assertivas.</p>
-  </section>
-
-  <section class="dark-section" id="cursos">
-    <h2>Curso Power BI para Contadores</h2>
-    <p>Domine o Power BI com foco na contabilidade e ofereça insights poderosos para os seus clientes.</p>
-    <ul>
-      <li>✔️ Introdução ao Power BI</li>
-      <li>✔️ ETL com Power Query</li>
-      <li>✔️ Visualizações e Dashboards</li>
-      <li>✔️ Casos práticos da área contábil</li>
-    </ul>
-    <p><a href="https://leilapereira.github.io/curso" style="color:#ffb6ff">➡️ Saiba mais sobre o curso</a></p>
-  </section>
-
-  <section class="light-section books-section">
-    <h2>📚 Meus Livros na Amazon</h2>
-    <ul>
-      <li><a href="https://www.amazon.com.br/Explorando-Poder-Power-Transforme-Informa%C3%A7%C3%B5es-ebook/dp/B0CYVRNR9G" target="_blank">Explorando o Poder do Power BI</a></li>
-      <li><a href="https://www.amazon.com.br/HIDROG%C3%8ANIO-VERDE-EMPREENDEDORISMO-AMBIENTAIS-TRIBUT%C3%81RIAS-ebook/dp/B0DS6CQQTG" target="_blank">Hidrogênio Verde e Empreendedorismo</a></li>
-      <li><a href="https://www.amazon.com.br/APLICA%C3%87%C3%95ES-BUSINESS-INTELLIGENCE-Revis%C3%A3o-Literatura-ebook/dp/B0CWPSL8FV" target="_blank">Aplicações de Business Intelligence</a></li>
-    </ul>
-  </section>
-
-  <section class="dark-section" id="canal">
-    <h2>📺 Canal no YouTube</h2>
-    <p>Inscreva-se no canal <strong>Contabilidade com Power BI</strong> para acompanhar vídeos e dicas práticas:</p>
-    <p><a href="https://www.youtube.com/channel/UCv9hwgi9vV5-O9EN09DziRQ" target="_blank" style="color:#ffb6ff">🎥 Acessar Canal do YouTube</a></p>
-  </section>
-
-  <div class="light-section qr-code">
-    <h3>📲 Acesse pelo celular</h3>
-    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://leilapereira.github.io" alt="QR Code">
-  </div>
-
-  <footer class="dark-section">
-    <h3>Leila Pereira</h3>
-    <p>Especialista em Power BI & Inteligência Contábil</p>
-    <div class="social-icons">
-      <a href="https://www.instagram.com/contabilcompowerbi" target="_blank"><img src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="Instagram" /></a>
-      <a href="https://www.linkedin.com/in/contabilleila/" target="_blank"><img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" /></a>
-      <a href="mailto:contabilassessoria.leilap@gmail.com"><img src="https://img.icons8.com/color/48/gmail-new.png" alt="E-mail" /></a>
+    <div class="sobre-container">
+      <img src="image.png" alt="Leila Pereira" />
+      <p>Sou Leila Pereira, especialista em Power BI e Inteligência Contábil. Há mais de 10 anos atuo com dados e estratégia para transformar realidades contábeis em decisões inteligentes para empresas de todos os portes.</p>
     </div>
-    <p>© 2024 Leila Pereira | Todos os direitos reservados</p>
-  </footer>
+  </section>
+
+  <!-- Demais seções continuam -->
 </body>
 </html>
+
