@@ -27,9 +27,6 @@
       color: #fff;
       text-shadow: 0 0 6px #ff4bdb;
     }
-    header h2 {
-      color: #ffb6ff;
-    }
     header p {
       font-size: 20px;
       max-width: 800px;
@@ -54,39 +51,52 @@
     section {
       max-width: 1000px;
       margin: 60px auto;
-      padding: 0 20px;
+      padding: 60px 20px;
       animation: fadeIn 1s ease;
+    }
+    .light-section {
+      background: #f5f5f5;
+      color: #111;
+    }
+    .dark-section {
+      background: #0d1117;
+      color: #e1e1e1;
     }
     h2 {
       color: #ff4bdb;
       margin-bottom: 20px;
     }
-    .skills li, .books li {
-      margin-bottom: 10px;
-    }
-    .links a {
-      display: inline-block;
-      margin: 10px 15px;
-      color: #ff6fd8;
+    .books-section ul li a {
+      color: #8f57aa;
       text-decoration: none;
-      font-weight: bold;
     }
-    .contact input, .contact textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border-radius: 5px;
-      border: 1px solid #555;
-      background: #1c1c1c;
-      color: #fff;
+    .books-section ul {
+      padding-left: 20px;
     }
-    .contact button {
-      background: #ff4bdb;
-      color: white;
-      border: none;
-      padding: 10px 25px;
-      border-radius: 5px;
-      cursor: pointer;
+    .sobre-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+      flex-wrap: nowrap;
+    }
+    .sobre-container img {
+      width: 200px;
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 0 12px rgba(255, 75, 219, 0.4);
+      flex-shrink: 0;
+    }
+    .sobre-container p {
+      flex: 1;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .qr-code {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .qr-code img {
+      width: 160px;
     }
     footer {
       text-align: center;
@@ -114,31 +124,6 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .qr-code {
-      margin-top: 30px;
-      text-align: center;
-    }
-    .qr-code img {
-      width: 160px;
-    }
-    .books-section ul li a {
-      color: #d49add;
-      text-decoration: none;
-    }
-    .books-section ul {
-      padding-left: 20px;
-    }
-    .sobre-container {
-      display: flex;
-      align-items: center;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
-    .sobre-container img {
-      width: 180px;
-      border-radius: 16px;
-      box-shadow: 0 0 12px rgba(255, 75, 219, 0.4);
-    }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
@@ -153,57 +138,12 @@
     <p>Descomplique os números e potencialize a estratégia do seu negócio com tecnologia e visão contábil.</p>
   </header>
 
-  <section id="sobre">
+  <section id="sobre" class="light-section">
     <h2>Sobre Mim</h2>
     <div class="sobre-container">
       <img src="imagem.png" alt="Leila Pereira" />
       <p>Sou Leila Pereira, especialista em Power BI e Inteligência Contábil. Há mais de 10 anos atuo com dados e estratégia para transformar realidades contábeis em decisões inteligentes para empresas de todos os portes.</p>
     </div>
   </section>
-
-  <section id="cursos">
-    <h2>Curso Power BI para Contadores</h2>
-    <p>Domine o Power BI com foco na contabilidade e ofereça insights poderosos para os seus clientes.</p>
-    <ul>
-      <li>✔️ Introdução ao Power BI</li>
-      <li>✔️ ETL com Power Query</li>
-      <li>✔️ Visualizações e Dashboards</li>
-      <li>✔️ Casos práticos da área contábil</li>
-    </ul>
-    <p><a href="https://leilapereira.github.io/curso" style="color:#ffb6ff">➡️ Saiba mais sobre o curso</a></p>
-  </section>
-
-  <section class="books-section">
-    <h2>📚 Meus Livros na Amazon</h2>
-    <ul>
-      <li><a href="https://www.amazon.com.br/Explorando-Poder-Power-Transforme-Informa%C3%A7%C3%B5es-ebook/dp/B0CYVRNR9G" target="_blank">Explorando o Poder do Power BI</a></li>
-      <li><a href="https://www.amazon.com.br/HIDROG%C3%8ANIO-VERDE-EMPREENDEDORISMO-AMBIENTAIS-TRIBUT%C3%81RIAS-ebook/dp/B0DS6CQQTG" target="_blank">Hidrogênio Verde e Empreendedorismo</a></li>
-      <li><a href="https://www.amazon.com.br/APLICA%C3%87%C3%95ES-BUSINESS-INTELLIGENCE-Revis%C3%A3o-Literatura-ebook/dp/B0CWPSL8FV" target="_blank">Aplicações de Business Intelligence</a></li>
-    </ul>
-  </section>
-
-  <section id="canal">
-    <h2>📺 Canal no YouTube</h2>
-    <p>Inscreva-se no canal <strong>Contabilidade com Power BI</strong> para acompanhar vídeos e dicas práticas:</p>
-    <p><a href="https://www.youtube.com/channel/UCv9hwgi9vV5-O9EN09DziRQ" target="_blank" style="color:#ffb6ff">🎥 Acessar Canal do YouTube</a></p>
-  </section>
-
-  <div class="qr-code">
-    <h3>📲 Acesse pelo celular</h3>
-    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://leilapereira.github.io" alt="QR Code">
-  </div>
-
-  <footer>
-    <h3>Leila Pereira</h3>
-    <p>Especialista em Power BI & Inteligência Contábil</p>
-    <div class="social-icons">
-      <a href="https://www.instagram.com/contabilcompowerbi" target="_blank"><img src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="Instagram" /></a>
-      <a href="https://www.linkedin.com/in/contabilleila/" target="_blank"><img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" /></a>
-      <a href="mailto:contabilassessoria.leilap@gmail.com"><img src="https://img.icons8.com/color/48/gmail-new.png" alt="E-mail" /></a>
-    </div>
-    <p>© 2024 Leila Pereira | Todos os direitos reservados</p>
-  </footer>
-</body>
-</html>
 
 
