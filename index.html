@@ -7,20 +7,13 @@
   <link rel="icon" type="image/png" href="https://img.icons8.com/color/48/000000/combo-chart--v1.png" />
   <link href="https://fonts.googleapis.com/css2?family=Microsoft+Sans+Serif&display=swap" rel="stylesheet">
   <style>
-    * { scroll-behavior: smooth; }
+    * { scroll-behavior: smooth; margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      margin: 0;
       font-family: 'Segoe UI', 'Microsoft Sans Serif', sans-serif;
       background: #0d1117;
       color: #e1e1e1;
-    }
-    section.light-section {
-      background: linear-gradient(to right, #ffffff 50%, #f0f0f0 50%);
-      color: #111;
-    }
-    section.dark-section {
-      background: linear-gradient(to right, #0d1117 50%, #1a1a1a 50%);
-      color: #e1e1e1;
+      padding: 0;
+      margin: 0;
     }
     header {
       background: linear-gradient(135deg, #9b2fff, #ff4bdb);
@@ -56,22 +49,20 @@
       color: #ff79c6;
       font-weight: bold;
     }
+    nav a:hover {
+      color: #fff;
+      text-shadow: 0 0 8px #ff4bdb;
+    }
     section {
       max-width: 1000px;
       margin: 60px auto;
       padding: 60px 20px;
       animation: fadeIn 1s ease;
+      transition: background 0.8s ease-in-out, color 0.6s ease-in-out;
     }
     h2 {
       color: #ff4bdb;
       margin-bottom: 20px;
-    }
-    .books-section ul li a {
-      color: #8f57aa;
-      text-decoration: none;
-    }
-    .books-section ul {
-      padding-left: 20px;
     }
     .sobre-container {
       display: flex;
@@ -85,11 +76,10 @@
       border-radius: 16px;
       box-shadow: 0 0 12px rgba(255, 75, 219, 0.4);
       flex-shrink: 0;
+      transition: transform 0.5s ease;
     }
-    .sobre-container p {
-      flex: 1;
-      font-size: 18px;
-      line-height: 1.6;
+    .sobre-container img:hover {
+      transform: scale(1.05);
     }
     .qr-code {
       margin-top: 30px;
@@ -123,33 +113,68 @@
       border-radius: 50px;
       text-decoration: none;
       font-weight: bold;
+      box-shadow: 0 0 10px rgba(37, 211, 102, 0.5);
     }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
-    section {
-      transition: background 0.8s ease-in-out, color 0.6s ease-in-out;
+    section.light-section {
+      background: linear-gradient(to right, #ffffff 50%, #f0f0f0 50%);
+      color: #111;
     }
-    .sobre-container img {
-      transition: transform 0.5s ease;
-    }
-    .sobre-container img:hover {
-      transform: scale(1.05);
-    }
-    nav a:hover {
-      color: #fff;
-      text-shadow: 0 0 8px #ff4bdb;
-    }
-      to { opacity: 1; transform: translateY(0); }
+    section.dark-section {
+      background: linear-gradient(to right, #0d1117 50%, #1a1a1a 50%);
+      color: #e1e1e1;
     }
   </style>
 </head>
 <body>
+
+  <!-- WhatsApp Button -->
   <a href="https://wa.me/5511950038487" target="_blank" id="whatsapp">💬 Fale comigo agora</a>
 
+  <!-- Header Section -->
   <header>
     <h1>Transforme Dados em Decisões com Power BI e Contabilidade Inteligente</h1>
     <p>Descomplique os números e potencialize a estratégia do seu negócio com tecnologia e visão contábil.</p>
   </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <!-- About Section -->
+  <section id="sobre" class="light-section">
+    <h2>Sobre</h2>
+    <div class="sobre-container">
+      <img src="https://via.placeholder.com/200" alt="Foto de Leila Pereira">
+      <p>Leila Pereira é especialista em contabilidade e consultoria com foco em Power BI, ajudando empresas a transformarem seus dados em insights estratégicos.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="servicos" class="dark-section">
+    <h2>Serviços</h2>
+    <ul class="books-section">
+      <li><a href="#">Consultoria em Power BI</a></li>
+      <li><a href="#">Planejamento Contábil e Fiscal</a></li>
+      <li><a href="#">Treinamentos Personalizados</a></li>
+    </ul>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Leila Pereira. Todos os direitos reservados.</p>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><img src="https://img.icons8.com/ios/50/000000/facebook.png" alt="Facebook"></a>
+      <a href="https://instagram.com" target="_blank"><img src="https://img.icons8.com/ios/50/000000/instagram-new.png" alt="Instagram"></a>
+    </div>
+  </footer>
+
+</body>
+</html>
+
