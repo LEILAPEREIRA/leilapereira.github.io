@@ -64,23 +64,6 @@
       color: #ff4bdb;
       margin-bottom: 20px;
     }
-    .sobre-container {
-      display: flex;
-      align-items: flex-start;
-      gap: 30px;
-      flex-wrap: nowrap;
-    }
-    .sobre-container img {
-      width: 200px;
-      height: auto;
-      border-radius: 16px;
-      box-shadow: 0 0 12px rgba(255, 75, 219, 0.4);
-      flex-shrink: 0;
-      transition: transform 0.5s ease;
-    }
-    .sobre-container img:hover {
-      transform: scale(1.05);
-    }
     .qr-code {
       margin-top: 30px;
       text-align: center;
@@ -130,9 +113,16 @@
       background: linear-gradient(to right, #0d1117 50%, #1a1a1a 50%);
       color: #e1e1e1;
     }
+    /* Esconder o iframe */
+    iframe {
+      display: none; /* Ocultar o player do YouTube */
+    }
   </style>
 </head>
 <body>
+
+  <!-- Música de Fundo Oculta -->
+  <iframe width="0" height="0" src="https://www.youtube.com/embed/4B_Sdf4t7ag?autoplay=1&loop=1&playlist=4B_Sdf4t7ag" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
   <!-- WhatsApp Button -->
   <a href="https://wa.me/5511950038487" target="_blank" id="whatsapp">💬 Fale comigo agora</a>
@@ -155,9 +145,7 @@
   <!-- About Section -->
   <section id="sobre" class="light-section">
     <h2>Sobre</h2>
-    <div class="sobre-container">
-      <!-- Foto de Leila Pereira -->
-      <img src="https://github.com/seu-usuario/seu-repositorio/blob/main/imagens/foto-leila.png?raw=true" alt="Foto de Leila Pereira">
+    <div>
       <p>Leila Pereira é especialista em contabilidade e consultoria com foco em Power BI, ajudando empresas a transformarem seus dados em insights estratégicos.</p>
     </div>
   </section>
@@ -207,5 +195,12 @@
   <!-- Footer Section -->
   <footer>
     <p>&copy; 2025 Leila Pereira. Todos os direitos reservados.</p>
-    <
+    <div class="social-icons">
+      <a href="https://www.instagram.com/contabilcompowerbi/" target="_blank"><img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram"></a>
+      <a href="https://linkedin.com" target="_blank"><img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn"></a>
+      <a href="https://www.youtube.com/@ContabilcompowerBi" target="_blank"><img src="https://img.icons8.com/color/48/000000/youtube.png" alt="YouTube"></a>
+    </div>
+  </footer>
 
+</body>
+</html>
